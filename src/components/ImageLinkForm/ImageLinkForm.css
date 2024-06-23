@@ -1,0 +1,21 @@
+.form {
+  width: 700px;
+  background-color: #c7fd3d;
+  opacity: 1;
+  background-size: 21px 21px;
+  background-image: repeating-linear-gradient(45deg, #8d9270 0, #a1ac39 2.1px, #dbc520 0, #a0dd12 50%);
+  --s: 52px; /* control the size */
+  --c1: #e78e8e;
+  --c2: #d9d625;
+
+  --p: 35%, #0000 calc(35% + 1px);
+  background:
+      radial-gradient(at 0 100%, var(--c1) var(--p)) var(--s) 0,
+      radial-gradient(at 0 100%, var(--c2) var(--p)) 0 var(--s),
+      repeating-conic-gradient(from 45deg, var(--c2) 0 25%, var(--c1) 0 50%);
+  background-size: calc(2 * var(--s)) calc(2 * var(--s));  
+}
+
+.buttton{
+  background-color: rgb(90, 99, 7);
+}
