@@ -66,12 +66,12 @@ const App = () => {
 
     setState(prevState => ({ ...prevState, imageUrl: input }));
 
-    axios.post('http://localhost:3080/imageurl', {
+    axios.post('https://image-detection-backend-x4an.onrender.com/imageurl', {
       input: input
     })
       .then(response => {
         if (response.data) {
-          return axios.put('http://localhost:3080/image', {
+          return axios.put('https://image-detection-backend-x4an.onrender.com/image', {
             id: user.id
           });
         } else {

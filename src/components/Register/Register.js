@@ -19,7 +19,7 @@ const Register = ({ onRouteChange, loadUser }) => {
   };
 
   const onSubmitSignIn = () => {
-    axios.post('http://localhost:3080/register', {
+    axios.post('https://image-detection-backend-x4an.onrender.com/register', {
       email: email,
       password: password,
       name: name
